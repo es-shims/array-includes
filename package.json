@@ -1,0 +1,70 @@
+{
+	"name": "array-includes",
+	"version": "1.0.0",
+	"author": "Jordan Harband",
+	"description": "A spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3.",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run lint && npm run test:shimmed && npm run test:module && npm run security",
+		"test:shimmed": "node test/shimmed.js",
+		"test:module": "node test/index.js",
+		"coverage": "covert test/*.js",
+		"coverage:quiet": "covert test/*.js --quiet",
+		"lint": "npm run jscs && npm run eslint",
+		"jscs": "jscs test/*.js *.js",
+		"eslint": "eslint test/*.js *.js",
+		"eccheck": "editorconfig-tools check *.js **/*.js > /dev/null",
+		"security": "nsp package"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ljharb/array-includes.git"
+	},
+	"keywords": [
+		"Array.prototype.includes",
+		"includes",
+		"array",
+		"ES7",
+		"shim",
+		"polyfill",
+		"contains",
+		"Array.prototype.contains"
+	],
+	"dependencies": {
+		"define-properties": "~1.0.0"
+	},
+	"devDependencies": {
+		"foreach": "~2.0.5",
+		"is": "~2.2.0",
+		"tape": "~3.0.3",
+		"indexof": "~0.0.1",
+		"covert": "1.0.0",
+		"jscs": "~1.9.0",
+		"editorconfig-tools": "~0.0.1",
+		"nsp": "~0.5.2",
+		"eslint": "~0.11.0"
+	},
+	"testling": {
+		"files": "test/index.js",
+		"browsers": [
+			"iexplore/6.0..latest",
+			"firefox/3.0..6.0",
+			"firefox/15.0..latest",
+			"firefox/nightly",
+			"chrome/4.0..10.0",
+			"chrome/20.0..latest",
+			"chrome/canary",
+			"opera/10.0..latest",
+			"opera/next",
+			"safari/4.0..latest",
+			"ipad/6.0..latest",
+			"iphone/6.0..latest",
+			"android-browser/4.2"
+		]
+	},
+	"engines": {
+		"node": ">= 0.4"
+	}
+}
+
