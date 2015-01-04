@@ -69,6 +69,5 @@ boundIncludesShim.shim = function shimArrayPrototypeIncludes() {
 	});
 	return Array.prototype.includes || includesShim;
 };
-boundIncludesShim.shim();
 
 module.exports = boundIncludesShim;
