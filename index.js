@@ -61,13 +61,14 @@ var boundIncludesShim = function includes(array, searchElement) {
 /*eslint-enable no-unused-vars */
 	return includesShim.apply(array, Array.prototype.slice.call(arguments, 1));
 };
-boundIncludesShim.method = includesShim;
-
-boundIncludesShim.shim = function shimArrayPrototypeIncludes() {
-	define(Array.prototype, {
-		includes: includesShim
-	});
-	return Array.prototype.includes || includesShim;
-};
+define(boundIncludesShim, {
+	method: includesShim,
+	shim: function shimArrayPrototypeIncludes() {
+		define(Array.prototype, {
+			includes: includesShim
+		});
+		return Array.prototype.includes || includesShim;
+	}
+});
 
 module.exports = boundIncludesShim;
