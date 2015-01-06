@@ -40,7 +40,8 @@ var ES = {
 };
 
 var includesShim = function includes(searchElement) {
-	if (Array.prototype.indexOf && !$isNaN(searchElement)) {
+	var fromIndex = arguments.length > 1 ? ES.ToInteger(arguments[1]) : 0;
+	if (Array.prototype.indexOf && !$isNaN(searchElement) && $isFinite(fromIndex)) {
 		return Array.prototype.indexOf.apply(this, arguments) > -1;
 	}
 
@@ -49,7 +50,6 @@ var includesShim = function includes(searchElement) {
 	if (length === 0) {
 		return false;
 	}
-	var fromIndex = arguments.length > 1 ? ES.ToInteger(arguments[1]) : 0;
 	var k = fromIndex >= 0 ? fromIndex : Math.max(0, length + fromIndex);
 	while (k < length) {
 		if (ES.SameValueZero(searchElement, O[k])) {
