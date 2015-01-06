@@ -32,10 +32,11 @@
 		"Array.prototype.contains"
 	],
 	"dependencies": {
-		"define-properties": "~1.0.0"
+		"define-properties": "~1.0.1"
 	},
 	"devDependencies": {
 		"foreach": "~2.0.5",
+		"function-bind": "~1.0.2",
 		"is": "~2.2.0",
 		"tape": "~3.0.3",
 		"indexof": "~0.0.1",

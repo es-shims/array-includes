@@ -3,6 +3,7 @@ includes.shim();
 
 var test = require('tape');
 var defineProperties = require('define-properties');
+var bind = require('function-bind');
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 
 test('shimmed', function (t) {
@@ -14,7 +15,7 @@ test('shimmed', function (t) {
 		et.end();
 	});
 
-	require('./tests')(Function.call.bind(Array.prototype.includes), t);
+	require('./tests')(bind.call(Function.call, Array.prototype.includes), t);
 
 	t.end();
 });
