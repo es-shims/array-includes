@@ -40,6 +40,10 @@ var ES = {
 };
 
 var includesShim = function includes(searchElement) {
+	if (Array.prototype.indexOf && !$isNaN(searchElement)) {
+		return Array.prototype.indexOf.apply(this, arguments) > -1;
+	}
+
 	var O = ES.ToObject(this);
 	var length = ES.ToLength(O.length);
 	if (length === 0) {
