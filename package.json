@@ -46,7 +46,7 @@
 		"eslint": "~0.11.0"
 	},
 	"testling": {
-		"files": "test/index.js",
+		"files": ["test/index.js", "test/shimmed.js"],
 		"browsers": [
 			"iexplore/6.0..latest",
 			"firefox/3.0..6.0",
