@@ -15,6 +15,20 @@ test('shimmed', function (t) {
 		et.end();
 	});
 
+	var supportsStrictMode = (function () {
+		'use strict';
+		var fn = function () { return this === null; };
+		return fn.call(null);
+	}());
+
+	t.test('bad array/this value', { skip: !supportsStrictMode }, function (st) {
+		'use strict';
+		st.throws(function () { return includes(undefined, 'a'); }, TypeError, 'undefined is not an object');
+		st.throws(function () { return includes(null, 'a'); }, TypeError, 'null is not an object');
+		st.end();
+	});
+
+
 	require('./tests')(bind.call(Function.call, Array.prototype.includes), t);
 
 	t.end();
