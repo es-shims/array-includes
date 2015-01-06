@@ -5,10 +5,14 @@ var test = require('tape');
 var defineProperties = require('define-properties');
 var bind = require('function-bind');
 var isEnumerable = Object.prototype.propertyIsEnumerable;
+var functionsHaveNames = function f() {}.name === 'f';
 
 test('shimmed', function (t) {
 	t.equal(Array.prototype.includes.length, 1, 'Array#includes has a length of 1');
-	t.equal(Array.prototype.includes.name, 'includes', 'Array#includes has name "includes"');
+	t.test('Function name', { skip: !functionsHaveNames }, function (st) {
+		st.equal(Array.prototype.includes.name, 'includes', 'Array#includes has name "includes"');
+		st.end();
+	});
 
 	t.test('enumerability', { skip: !defineProperties.supportsDescriptors }, function (et) {
 		et.equal(false, isEnumerable.call(Array.prototype, 'includes'), 'Array#includes is not enumerable');
