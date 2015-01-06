@@ -59,7 +59,7 @@ var includesShim = function includes(searchElement) {
 /*eslint-disable no-unused-vars */
 var boundIncludesShim = function includes(array, searchElement) {
 /*eslint-enable no-unused-vars */
-	return includesShim.apply(array, Array.prototype.slice.call(arguments, 1));
+	return includesShim.apply(ES.CheckObjectCoercible(array), Array.prototype.slice.call(arguments, 1));
 };
 define(boundIncludesShim, {
 	method: includesShim,
