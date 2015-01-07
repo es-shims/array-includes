@@ -1,3 +1,9 @@
+1.0.3 / 2015-01-06
+=================
+  * Speed optimization: use Array#indexOf when available
+  * Fix ES3, IE 6-8, Opera 10.6, Opera 11.1 support
+  * Run testling on both sets of tests
+
 1.0.2 / 2015-01-05
 =================
   * Ensure tests are includes in the module on `npm`
