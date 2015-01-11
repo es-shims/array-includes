@@ -1,3 +1,7 @@
+1.0.4 / 2015-01-10
+=================
+  * Use `es-abstract` for ECMAScript spec internal abstract operations
+
 1.0.3 / 2015-01-06
 =================
   * Speed optimization: use Array#indexOf when available
