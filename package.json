@@ -32,7 +32,8 @@
 		"Array.prototype.contains"
 	],
 	"dependencies": {
-		"define-properties": "~1.0.1"
+		"define-properties": "~1.0.1",
+		"es-abstract": "~1.0.0"
 	},
 	"devDependencies": {
 		"foreach": "~2.0.5",

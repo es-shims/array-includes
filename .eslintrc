@@ -34,7 +34,7 @@
 		"max-params": [0, 3],
 		"max-statements": [0, 10],
 		"new-parens": [2],
-		"new-cap": [2, { capIsNewExceptions: ["Obj", "ToNumber", "ToObject", "ToInteger", "CheckObjectCoercible", "ToLength", "SameValueZero"] }],
+		"new-cap": [2, { capIsNewExceptions: ["ToObject", "ToInteger", "ToLength", "SameValueZero", "RequireObjectCoercible"] }],
 		"no-alert": [2],
 		"no-array-constructor": [2],
 		"no-bitwise": [0],
