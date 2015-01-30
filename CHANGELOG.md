@@ -1,3 +1,7 @@
+1.0.5 / 2015-01-30
+=================
+  * Update `tape`, `jscs`, `nsp`, `eslint`, `es-abstract`
+
 1.0.4 / 2015-01-10
 =================
   * Use `es-abstract` for ECMAScript spec internal abstract operations
