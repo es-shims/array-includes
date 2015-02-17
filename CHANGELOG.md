@@ -1,3 +1,9 @@
+1.0.6 / 2015-02-17
+=================
+  * All grade A-supported `node`/`iojs` versions now ship with an `npm` that understands `^`.
+  * Run `travis-ci` tests on `iojs` and `node` v0.12; allow 0.8 failures.
+  * Update `tape`, `jscs`, `es-abstract`, remove `is`.
+
 1.0.5 / 2015-01-30
 =================
   * Update `tape`, `jscs`, `nsp`, `eslint`, `es-abstract`
