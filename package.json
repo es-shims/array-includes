@@ -38,7 +38,6 @@
 	"devDependencies": {
 		"foreach": "^2.0.5",
 		"function-bind": "^1.0.2",
-		"is": "^2.2.1",
 		"tape": "^3.5.0",
 		"indexof": "^0.0.1",
 		"covert": "^1.0.1",
