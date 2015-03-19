@@ -1,3 +1,7 @@
+1.1.0 / 2015-03-19
+=================
+  * Update `es-abstract`, `editorconfig-tools`, `nsp`, `eslint`, `semver`
+
 1.0.6 / 2015-02-17
 =================
   * All grade A-supported `node`/`iojs` versions now ship with an `npm` that understands `^`.
