@@ -33,7 +33,7 @@
 	],
 	"dependencies": {
 		"define-properties": "^1.0.1",
-		"es-abstract": "^1.1.0"
+		"es-abstract": "^1.2.0"
 	},
 	"devDependencies": {
 		"foreach": "^2.0.5",
@@ -42,10 +42,10 @@
 		"indexof": "^0.0.1",
 		"covert": "^1.0.1",
 		"jscs": "^1.11.3",
-		"editorconfig-tools": "^0.0.1",
-		"nsp": "^1.0.0",
-		"eslint": "^0.14.1",
-		"semver": "^4.3.0"
+		"editorconfig-tools": "^0.1.1",
+		"nsp": "^1.0.1",
+		"eslint": "^0.17.1",
+		"semver": "^4.3.1"
 	},
 	"testling": {
 		"files": [

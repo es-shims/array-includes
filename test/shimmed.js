@@ -32,7 +32,6 @@ test('shimmed', function (t) {
 		st.end();
 	});
 
-
 	require('./tests')(bind.call(Function.call, Array.prototype.includes), t);
 
 	t.end();
