@@ -1,3 +1,8 @@
+1.1.1 / 2015-05-23
+=================
+  * Test up to `io.js` `v2.0`
+  * Update `es-abstract`, `tape`, `eslint`, `semver`, `jscs`, `semver`
+
 1.1.0 / 2015-03-19
 =================
   * Update `es-abstract`, `editorconfig-tools`, `nsp`, `eslint`, `semver`
