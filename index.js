@@ -7,7 +7,7 @@ var $isFinite = Number.isFinite || function (n) { return typeof n === 'number' &
 
 var includesShim = function includes(searchElement) {
 	var fromIndex = arguments.length > 1 ? ES.ToInteger(arguments[1]) : 0;
-	if (Array.prototype.indexOf && !$isNaN(searchElement) && $isFinite(fromIndex)) {
+	if (Array.prototype.indexOf && !$isNaN(searchElement) && $isFinite(fromIndex) && typeof searchElement !== 'undefined') {
 		return Array.prototype.indexOf.apply(this, arguments) > -1;
 	}
 

@@ -4,6 +4,18 @@ module.exports = function (includes, t) {
 	var thrower = { valueOf: function () { throw new RangeError('whoa'); } };
 	var numberish = { valueOf: function () { return 2; } };
 
+	t.test('simple examples', function (st) {
+		st.equal(true, includes([1, 2, 3], 1), '[1, 2, 3] includes 1');
+		st.equal(false, includes([1, 2, 3], 4), '[1, 2, 3] does not include 4');
+		st.equal(true, includes([NaN], NaN), '[NaN] includes NaN');
+		st.end();
+	});
+
+	t.test('does not skip holes', function (st) {
+		st.equal(true, includes(Array(1)), 'Array(1) includes undefined');
+		st.end();
+	});
+
 	t.test('exceptions', function (et) {
 		et.test('fromIndex conversion', function (st) {
 			st.throws(function () { return includes([0], 0, thrower); }, RangeError, 'fromIndex conversion throws');
