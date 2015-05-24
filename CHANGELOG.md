@@ -1,3 +1,7 @@
+2.0.0 / 2015-05-23
+=================
+  * Fix to not skip holes, per https://github.com/tc39/Array.prototype.includes/issues/15
+
 1.1.1 / 2015-05-23
 =================
   * Test up to `io.js` `v2.0`
