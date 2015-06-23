@@ -26,9 +26,9 @@ var includesShim = function includes(searchElement) {
 	return false;
 };
 
-/*eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars */
 var boundIncludesShim = function includes(array, searchElement) {
-/*eslint-enable no-unused-vars */
+/* eslint-enable no-unused-vars */
 	ES.RequireObjectCoercible(array);
 	return includesShim.apply(array, Array.prototype.slice.call(arguments, 1));
 };
