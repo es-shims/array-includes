@@ -18,12 +18,12 @@ module.exports = function (includes, t) {
 
 	t.test('exceptions', function (et) {
 		et.test('fromIndex conversion', function (st) {
-			st.throws(function () { return includes([0], 0, thrower); }, RangeError, 'fromIndex conversion throws');
+			st.throws(includes.bind(null, [0], 0, thrower), RangeError, 'fromIndex conversion throws');
 			st.end();
 		});
 
 		et.test('ToLength', function (st) {
-			st.throws(function () { return includes({ length: thrower, 0: true }, true); }, RangeError, 'ToLength conversion throws');
+			st.throws(includes.bind(null, { length: thrower, 0: true }, true), RangeError, 'ToLength conversion throws');
 			st.end();
 		});
 
