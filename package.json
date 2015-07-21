@@ -30,6 +30,7 @@
 		"ES7",
 		"shim",
 		"polyfill",
+		"ponyfill",
 		"contains",
 		"Array.prototype.contains"
 	],
