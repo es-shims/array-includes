@@ -33,7 +33,7 @@ var boundIncludesShim = function includes(array, searchElement) {
 	return includesShim.apply(array, Array.prototype.slice.call(arguments, 1));
 };
 define(boundIncludesShim, {
-	method: includesShim,
+	polyfill: includesShim,
 	shim: function shimArrayPrototypeIncludes() {
 		define(Array.prototype, {
 			includes: includesShim
