@@ -1,3 +1,5 @@
+'use strict';
+
 var includes = require('../');
 var test = require('tape');
 

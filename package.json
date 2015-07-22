@@ -32,20 +32,20 @@
 		"Array.prototype.contains"
 	],
 	"dependencies": {
-		"define-properties": "^1.1.0",
+		"define-properties": "^1.1.1",
 		"es-abstract": "^1.2.1"
 	},
 	"devDependencies": {
 		"foreach": "^2.0.5",
 		"function-bind": "^1.0.2",
-		"tape": "^4.0.0",
+		"tape": "^4.0.1",
 		"indexof": "^0.0.1",
 		"covert": "^1.1.0",
 		"jscs": "^1.13.1",
 		"editorconfig-tools": "^0.1.1",
 		"nsp": "^1.0.3",
-		"eslint": "^0.24.0",
-		"semver": "^4.3.6",
+		"eslint": "^1.0.0-rc-1",
+		"semver": "^5.0.1",
 		"replace": "^0.3.0"
 	},
 	"testling": {

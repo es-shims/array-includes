@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function (includes, t) {
 	var sparseish = { length: 5, 0: 'a', 1: 'b' };
 	var overfullarrayish = { length: 2, 0: 'a', 1: 'b', 2: 'c' };
