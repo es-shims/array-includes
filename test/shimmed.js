@@ -21,10 +21,7 @@ test('shimmed', function (t) {
 		et.end();
 	});
 
-	var supportsStrictMode = (function () {
-		var fn = function () { return this === null; };
-		return fn.call(null);
-	}());
+	var supportsStrictMode = (function () { return typeof this === 'undefined'; }());
 
 	t.test('bad array/this value', { skip: !supportsStrictMode }, function (st) {
 		st.throws(function () { return includes(undefined, 'a'); }, TypeError, 'undefined is not an object');
