@@ -11,7 +11,10 @@
 [![browser support][testling-svg]][testling-url]
 
 A spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3.
-Invoke its "shim" method to shim `Array.prototype.includes` if it is unavailable.
+
+This package implements the [es-shim API](https://github/com/es-shims/api) interface. It works in an ES3-supported environment and complies with the proposed [spec](http://www.ecma-international.org/ecma-262/6.0/).
+
+Because `Array.prototype.includes` depends on a receiver (the “this” value), the main export takes the array to operate on as the first argument.
 
 ## Example
 
@@ -75,4 +78,3 @@ Simply clone the repo, `npm install`, and run `npm test`
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/array-includes.svg
 [downloads-url]: http://npm-stat.com/charts.html?package=array-includes
-

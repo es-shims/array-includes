@@ -1,7 +1,6 @@
 'use strict';
 
-var includes = require('../');
-includes.shim();
+require('../shim')();
 
 var test = require('tape');
 var defineProperties = require('define-properties');
@@ -24,8 +23,8 @@ test('shimmed', function (t) {
 	var supportsStrictMode = (function () { return typeof this === 'undefined'; }());
 
 	t.test('bad array/this value', { skip: !supportsStrictMode }, function (st) {
-		st.throws(function () { return includes(undefined, 'a'); }, TypeError, 'undefined is not an object');
-		st.throws(function () { return includes(null, 'a'); }, TypeError, 'null is not an object');
+		st.throws(function () { return Array.prototype.includes.call(undefined, 'a'); }, TypeError, 'undefined is not an object');
+		st.throws(function () { return Array.prototype.includes.call(null, 'a'); }, TypeError, 'null is not an object');
 		st.end();
 	});
 
