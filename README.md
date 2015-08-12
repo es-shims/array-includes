@@ -10,8 +10,33 @@
 
 [![browser support][testling-svg]][testling-url]
 
-A spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3.
-Invoke its "shim" method to shim `Array.prototype.includes` if it is unavailable.
+A spec-compliant `Array.prototype.includes` shim/ponyfill/polyfill/replacement that works as far down as ES3.
+
+## Usage
+
+Require `'array-includes/ponyfill'` to use the native method if available, and otherwise a spec-compliant shim:
+
+```js
+var includes = require('array-includes/ponyfill');
+includes([NaN], NaN);
+//» true
+```
+
+Require `'array-includes'` to use the spec-compliant shim:
+
+```js
+var includes = require('array-includes');
+includes([NaN], NaN);
+//» true
+```
+
+Invoke the `shim` method if you [really want](https://github.com/sindresorhus/object-assign/issues/10#issuecomment-65065859) a classical polyfill:
+
+```js
+require('array-includes').shim();
+[NaN].includes(NaN);
+//» true
+```
 
 ## Example
 
