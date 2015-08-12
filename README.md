@@ -61,7 +61,7 @@ assert.deepEqual(arr.includes(1, 'foo'), includes(arr, 1, 'foo'));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [package-url]: https://npmjs.org/package/array-includes
-[npm-version-svg]: http://vb.teelaun.ch/ljharb/array-includes.svg
+[npm-version-svg]: http://versionbadg.es/ljharb/array-includes.svg
 [travis-svg]: https://travis-ci.org/ljharb/array-includes.svg
 [travis-url]: https://travis-ci.org/ljharb/array-includes
 [deps-svg]: https://david-dm.org/ljharb/array-includes.svg
