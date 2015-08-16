@@ -1,3 +1,7 @@
+3.0.1 / 2015-05-23
+=================
+  * [Fix] in "shim", assign the polyfill, not the implementation
+
 3.0.0 / 2015-05-23
 =================
   * [Breaking] Implement the [es-shim API](es-shims/api)

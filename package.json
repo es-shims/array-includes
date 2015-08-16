@@ -1,6 +1,6 @@
 {
 	"name": "array-includes",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"author": "Jordan Harband",
 	"description": "A spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3.",
 	"license": "MIT",
@@ -29,7 +29,8 @@
 		"shim",
 		"polyfill",
 		"contains",
-		"Array.prototype.contains"
+		"Array.prototype.contains",
+		"es-shim API"
 	],
 	"dependencies": {
 		"define-properties": "^1.1.1",
