@@ -1,3 +1,12 @@
+3.0.0 / 2015-05-23
+=================
+  * [Breaking] Implement the [es-shim API](es-shims/api)
+  * [Deps] update `define-properties`, `es-abstract`
+  * [Dev Deps] update `eslint`, `semver`, `nsp`, `semver`, `jscs`
+  * [Docs] Switch from vb.teelaun.ch to versionbadg.es for the npm version badge SVG
+  * [Tests] use my personal shared `eslint` config
+  * [Tests] up to `io.js` `v3.0`
+
 2.0.0 / 2015-05-23
 =================
   * Fix to not skip holes, per https://github.com/tc39/Array.prototype.includes/issues/15
