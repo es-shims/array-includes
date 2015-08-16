@@ -12,7 +12,7 @@
 
 A spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3.
 
-This package implements the [es-shim API](https://github/com/es-shims/api) interface. It works in an ES3-supported environment and complies with the proposed [spec](http://www.ecma-international.org/ecma-262/6.0/).
+This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the proposed [spec](http://www.ecma-international.org/ecma-262/6.0/).
 
 Because `Array.prototype.includes` depends on a receiver (the “this” value), the main export takes the array to operate on as the first argument.
 
