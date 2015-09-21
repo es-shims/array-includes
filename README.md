@@ -21,15 +21,15 @@ Because `Array.prototype.includes` depends on a receiver (the “this” value),
 ```js
 var includes = require('array-includes');
 var assert = require('assert');
-var arr = {
+var arr = [
 	1,
 	'foo',
 	NaN,
 	-0
-};
+];
 assert.equal(arr.indexOf(0) > -1, true);
 assert.equal(arr.indexOf(-0) > -1, true);
-assert.equal(includes(arr, 0), false);
+assert.equal(includes(arr, 0), true);
 assert.equal(includes(arr, -0), true);
 
 assert.equal(arr.indexOf(NaN) > -1, false);
