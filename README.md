@@ -46,7 +46,7 @@ var assert = require('assert');
 /* when Array#includes is not present */
 delete Array.prototype.includes;
 var shimmedIncludes = includes.shim();
-assert.equal(shimmedIncludes, includes);
+assert.equal(shimmedIncludes, includes.getPolyfill());
 assert.deepEqual(arr.includes('foo', 1), includes(arr, 'foo', 1));
 ```
 
@@ -55,7 +55,6 @@ var includes = require('array-includes');
 var assert = require('assert');
 /* when Array#includes is present */
 var shimmedIncludes = includes.shim();
-assert.notEqual(shimmedIncludes, includes);
 assert.equal(shimmedIncludes, Array.prototype.includes);
 assert.deepEqual(arr.includes(1, 'foo'), includes(arr, 1, 'foo'));
 ```

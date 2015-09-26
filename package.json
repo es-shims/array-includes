@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint && es-shim-api --bound && npm run test:shimmed && npm run test:module && npm run security",
+		"test": "npm run lint && es-shim-api --bound && evalmd README.md && npm run test:shimmed && npm run test:module && npm run security",
 		"test:shimmed": "node test/shimmed.js",
 		"test:module": "node test/index.js",
 		"coverage": "covert test/*.js",
@@ -49,7 +49,8 @@
 		"@ljharb/eslint-config": "^1.2.0",
 		"semver": "^5.0.3",
 		"replace": "^0.3.0",
-		"@es-shims/api": "^1.0.0"
+		"@es-shims/api": "^1.0.0",
+		"evalmd": "^0.0.16"
 	},
 	"testling": {
 		"files": [
