@@ -8,6 +8,8 @@ var bind = require('function-bind');
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 var functionsHaveNames = function f() {}.name === 'f';
 
+var runTests = require('./tests');
+
 test('shimmed', function (t) {
 	t.equal(Array.prototype.includes.length, 1, 'Array#includes has a length of 1');
 	t.test('Function name', { skip: !functionsHaveNames }, function (st) {
@@ -28,7 +30,7 @@ test('shimmed', function (t) {
 		st.end();
 	});
 
-	require('./tests')(bind.call(Function.call, Array.prototype.includes), t);
+	runTests(bind.call(Function.call, Array.prototype.includes), t);
 
 	t.end();
 });
