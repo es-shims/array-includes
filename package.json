@@ -46,7 +46,7 @@
 	],
 	"dependencies": {
 		"define-properties": "^1.1.2",
-		"es-abstract": "^1.4.1"
+		"es-abstract": "^1.4.3"
 	},
 	"devDependencies": {
 		"foreach": "^2.0.5",
