@@ -1,3 +1,13 @@
+3.0.2 / 2015-06-06
+=================
+  * Use the polyfill, not the implementation, as the default export
+  * [Deps] update `es-abstract`
+  * [Dev Deps] update `jscs`, `nsp`, `eslint`, `@ljharb/eslint-config`, `semver`
+  * [Tests] up to `node` `v5.5`
+  * [Tests] keep tests passing in `node` `v0.8`
+  * [Tests] Only run `evalmd` as part of the full test suite, since it's more like a linter
+  * [Tests] fix npm upgrades for older nodes
+
 3.0.1 / 2015-05-23
 =================
   * [Fix] in "shim", assign the polyfill, not the implementation

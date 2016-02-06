@@ -1,6 +1,6 @@
 {
 	"name": "array-includes",
-	"version": "3.0.1",
+	"version": "3.0.2",
 	"author": {
 		"name": "Jordan Harband",
 		"email": "ljharb@gmail.com",
@@ -13,7 +13,7 @@
 			"url": "http://ljharb.codes"
 		}
 	],
-	"description": "A spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3.",
+	"description": "An ES7/ES2016 spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3.",
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
