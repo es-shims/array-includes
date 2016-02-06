@@ -5,6 +5,7 @@ var ES = require('es-abstract/es6');
 
 var implementation = require('./implementation');
 var getPolyfill = require('./polyfill');
+var polyfill = getPolyfill();
 var shim = require('./shim');
 
 var slice = Array.prototype.slice;
@@ -13,7 +14,7 @@ var slice = Array.prototype.slice;
 var boundIncludesShim = function includes(array, searchElement) {
 /* eslint-enable no-unused-vars */
 	ES.RequireObjectCoercible(array);
-	return implementation.apply(array, slice.call(arguments, 1));
+	return polyfill.apply(array, slice.call(arguments, 1));
 };
 define(boundIncludesShim, {
 	implementation: implementation,
