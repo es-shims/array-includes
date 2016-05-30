@@ -1,8 +1,12 @@
 'use strict';
 
 var ES = require('es-abstract/es6');
-var $isNaN = Number.isNaN || function (a) { return a !== a; };
-var $isFinite = Number.isFinite || function (n) { return typeof n === 'number' && global.isFinite(n); };
+var $isNaN = Number.isNaN || function isNaN(a) {
+	return a !== a;
+};
+var $isFinite = Number.isFinite || function isFinite(n) {
+	return typeof n === 'number' && global.isFinite(n);
+};
 var indexOf = Array.prototype.indexOf;
 
 module.exports = function includes(searchElement) {
