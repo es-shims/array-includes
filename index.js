@@ -17,8 +17,8 @@ var boundIncludesShim = function includes(array, searchElement) {
 	return polyfill.apply(array, slice.call(arguments, 1));
 };
 define(boundIncludesShim, {
-	implementation: implementation,
 	getPolyfill: getPolyfill,
+	implementation: implementation,
 	shim: shim
 });
 
