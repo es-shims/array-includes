@@ -14,7 +14,28 @@ An ES7/ES2016 spec-compliant `Array.prototype.includes` shim/polyfill/replacemen
 
 This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the proposed [spec](http://www.ecma-international.org/ecma-262/6.0/).
 
-Because `Array.prototype.includes` depends on a receiver (the “this” value), the main export takes the array to operate on as the first argument.
+Because `Array.prototype.includes` depends on a receiver (the `this` value), the main export takes the array to operate on as the first argument.
+
+## Getting started
+
+```sh
+npm install --save array-includes
+```
+
+## Usage
+
+Basic usage: **includes(array, value[, fromIndex=0])**
+
+```js
+var includes = require('array-includes');
+var arr = [ 'one', 'two' ];
+
+includes(arr, 'one'); // true
+includes(arr, 'three'); // false
+includes(arr, 'one', 1); // false
+```
+
+
 
 ## Example
 
@@ -27,6 +48,7 @@ var arr = [
 	NaN,
 	-0
 ];
+
 assert.equal(arr.indexOf(0) > -1, true);
 assert.equal(arr.indexOf(-0) > -1, true);
 assert.equal(includes(arr, 0), true);
@@ -46,6 +68,7 @@ var assert = require('assert');
 /* when Array#includes is not present */
 delete Array.prototype.includes;
 var shimmedIncludes = includes.shim();
+
 assert.equal(shimmedIncludes, includes.getPolyfill());
 assert.deepEqual(arr.includes('foo', 1), includes(arr, 'foo', 1));
 ```
@@ -55,6 +78,7 @@ var includes = require('array-includes');
 var assert = require('assert');
 /* when Array#includes is present */
 var shimmedIncludes = includes.shim();
+
 assert.equal(shimmedIncludes, Array.prototype.includes);
 assert.deepEqual(arr.includes(1, 'foo'), includes(arr, 1, 'foo'));
 ```
