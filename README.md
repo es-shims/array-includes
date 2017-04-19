@@ -1,4 +1,4 @@
-#array-includes <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
+# array-includes <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
 [![Build Status][travis-svg]][travis-url]
 [![dependency status][deps-svg]][deps-url]
