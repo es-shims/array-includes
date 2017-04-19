@@ -1,3 +1,11 @@
+3.0.3 / 2017-04-18
+=================
+  * [Fix] ensure that `shim.js` actually shims when the polyfill differs from native
+  * [Tests] up to `node` `v7.9`, `v6.10`, `v4.8`; comment out OS X builds; improve test matrix
+  * [Dev Deps] update `nsp`, `eslint`, `@ljharb/eslint-config`, `tape`, `jscs`, `semver`, `function-bind`, `@es-shims/api`
+  * [Deps] update `es-abstract`
+  * [Docs] update readme: add “getting started” and “usage” (#19)
+
 3.0.2 / 2015-06-06
 =================
   * Use the polyfill, not the implementation, as the default export
