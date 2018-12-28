@@ -19,14 +19,16 @@
 	"scripts": {
 		"pretest": "npm run --silent lint && evalmd README.md",
 		"test": "npm run --silent tests-only",
-		"posttest": "npm run --silent security",
+		"posttest": "npm run audit",
 		"tests-only": "es-shim-api --bound && npm run --silent test:shimmed && npm run --silent test:module",
 		"test:shimmed": "node test/shimmed.js",
 		"test:module": "node test/index.js",
 		"coverage": "covert test/*.js",
 		"coverage:quiet": "covert test/*.js --quiet",
 		"lint": "eslint .",
-		"security": "nsp check"
+		"preaudit": "npm install --package-lock --package-lock-only",
+		"audit": "npm audit",
+		"postaudit": "rm package-lock.json"
 	},
 	"repository": {
 		"type": "git",
@@ -57,7 +59,6 @@
 		"function-bind": "^1.1.1",
 		"indexof": "^0.0.1",
 		"jscs": "^3.0.7",
-		"nsp": "^3.2.1",
 		"replace": "^1.0.0",
 		"semver": "^5.6.0",
 		"tape": "^4.9.1"
