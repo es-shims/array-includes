@@ -51,15 +51,15 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
-		"@ljharb/eslint-config": "^13.0.0",
+		"@ljharb/eslint-config": "^13.1.0",
 		"covert": "^1.1.0",
-		"eslint": "^5.7.0",
+		"eslint": "^5.11.1",
 		"evalmd": "^0.0.17",
 		"foreach": "^2.0.5",
 		"function-bind": "^1.1.1",
 		"indexof": "^0.0.1",
 		"jscs": "^3.0.7",
-		"replace": "^1.0.0",
+		"replace": "^1.0.1",
 		"semver": "^5.6.0",
 		"tape": "^4.9.1"
 	},
