@@ -16,6 +16,13 @@
 	"description": "An ES7/ES2016 spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3.",
 	"license": "MIT",
 	"main": "index.js",
+	"files": [
+		"index.js",
+		"implementation.js",
+		"polyfill.js",
+		"shim.js",
+		"auto.js"
+	],
 	"scripts": {
 		"pretest": "npm run --silent lint && evalmd README.md",
 		"test": "npm run --silent tests-only",
