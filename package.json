@@ -57,6 +57,7 @@
 		"evalmd": "^0.0.17",
 		"foreach": "^2.0.5",
 		"function-bind": "^1.1.1",
+		"functions-have-names": "^1.1.0",
 		"indexof": "^0.0.1",
 		"jscs": "^3.0.7",
 		"replace": "^1.0.1",
