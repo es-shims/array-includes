@@ -70,7 +70,7 @@ delete Array.prototype.includes;
 var shimmedIncludes = includes.shim();
 
 assert.equal(shimmedIncludes, includes.getPolyfill());
-assert.deepEqual(arr.includes('foo', 1), includes(arr, 'foo', 1));
+assert.equal(arr.includes('foo', 1), includes(arr, 'foo', 1));
 ```
 
 ```js
@@ -80,7 +80,7 @@ var assert = require('assert');
 var shimmedIncludes = includes.shim();
 
 assert.equal(shimmedIncludes, Array.prototype.includes);
-assert.deepEqual(arr.includes(1, 'foo'), includes(arr, 1, 'foo'));
+assert.equal(arr.includes(1, 'foo'), includes(arr, 1, 'foo'));
 ```
 
 ## Tests
