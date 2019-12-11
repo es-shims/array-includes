@@ -1,3 +1,21 @@
+3.1.0 / 2019-12-11
+=================
+  * [New] add `auto` entry point
+  * [Refactor] use split-up `es-abstract` (68% bundle size decrease)
+  * [readme] fix repo URLs, remove testling, fix readme parsing
+  * [Deps] update `es-abstract`, `define-properties`
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `evalmd`, `covert`, `functions-have-names`, `replace`, `semver`, `tape`, `@es-shims/api`, `function-bind`
+  * [meta] add `funding` field, FUNDING.yml
+  * [meta] Only apps should have lockfiles
+  * [Tests] add more `fromIndex` tests
+  * [Tests] use shared travis-ci configs
+  * [Tests] use `npx aud` instead of `nsp` or `npm audit` with hoops
+  * [Tests] remove `jscs`
+  * [Tests] use `functions-have-names`
+  * [Tests] use `npm audit` instead of `nsp`
+  * [Tests] remove `jscs`
+  * [actions] add automatic rebasing / merge commit blocking
+
 3.0.3 / 2017-04-18
 =================
   * [Fix] ensure that `shim.js` actually shims when the polyfill differs from native
