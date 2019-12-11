@@ -44,6 +44,10 @@ module.exports = function (includes, t) {
 	t.test('fromIndex', function (ft) {
 		ft.equal(true, includes([1], 1, NaN), 'NaN fromIndex -> 0 fromIndex');
 
+		ft.equal(true, includes([0, 1, 2], 1, 0), 'starting from 0 finds index 1');
+		ft.equal(true, includes([0, 1, 2], 1, 1), 'starting from 1 finds index 1');
+		ft.equal(false, includes([0, 1, 2], 1, 2), 'starting from 2 does not find index 1');
+
 		ft.test('number coercion', function (st) {
 			st.equal(false, includes(['a', 'b', 'c'], 'a', numberish), 'does not find "a" with object fromIndex coercing to 2');
 			st.equal(false, includes(['a', 'b', 'c'], 'a', '2'), 'does not find "a" with string fromIndex coercing to 2');

@@ -26,6 +26,7 @@ Basic usage: **includes(array, value[, fromIndex=0])**
 
 ```js
 var includes = require('array-includes');
+var assert = require('assert');
 var arr = [ 'one', 'two' ];
 
 includes(arr, 'one'); // true
@@ -38,8 +39,6 @@ includes(arr, 'one', 1); // false
 ## Example
 
 ```js
-var includes = require('array-includes');
-var assert = require('assert');
 var arr = [
 	1,
 	'foo',
@@ -61,8 +60,6 @@ assert.equal(includes(arr, 'foo', 2), false);
 ```
 
 ```js
-var includes = require('array-includes');
-var assert = require('assert');
 /* when Array#includes is not present */
 delete Array.prototype.includes;
 var shimmedIncludes = includes.shim();
@@ -72,8 +69,6 @@ assert.equal(arr.includes('foo', 1), includes(arr, 'foo', 1));
 ```
 
 ```js
-var includes = require('array-includes');
-var assert = require('assert');
 /* when Array#includes is present */
 var shimmedIncludes = includes.shim();
 
