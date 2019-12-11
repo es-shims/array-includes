@@ -32,7 +32,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/ljharb/array-includes.git"
+		"url": "git://github.com/es-shims/array-includes.git"
 	},
 	"keywords": [
 		"Array.prototype.includes",

@@ -8,8 +8,6 @@
 
 [![npm badge][npm-badge-png]][package-url]
 
-[![browser support][testling-svg]][testling-url]
-
 An ES7/ES2016 spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3.
 
 This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the proposed [spec](http://www.ecma-international.org/ecma-262/6.0/).
@@ -87,15 +85,13 @@ assert.equal(arr.includes(1, 'foo'), includes(arr, 1, 'foo'));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [package-url]: https://npmjs.org/package/array-includes
-[npm-version-svg]: http://versionbadg.es/ljharb/array-includes.svg
-[travis-svg]: https://travis-ci.org/ljharb/array-includes.svg
-[travis-url]: https://travis-ci.org/ljharb/array-includes
-[deps-svg]: https://david-dm.org/ljharb/array-includes.svg
-[deps-url]: https://david-dm.org/ljharb/array-includes
-[dev-deps-svg]: https://david-dm.org/ljharb/array-includes/dev-status.svg
-[dev-deps-url]: https://david-dm.org/ljharb/array-includes#info=devDependencies
-[testling-svg]: https://ci.testling.com/ljharb/array-includes.png
-[testling-url]: https://ci.testling.com/ljharb/array-includes
+[npm-version-svg]: http://versionbadg.es/es-shims/array-includes.svg
+[travis-svg]: https://travis-ci.org/es-shims/array-includes.svg
+[travis-url]: https://travis-ci.org/es-shims/array-includes
+[deps-svg]: https://david-dm.org/es-shims/array-includes.svg
+[deps-url]: https://david-dm.org/es-shims/array-includes
+[dev-deps-svg]: https://david-dm.org/es-shims/array-includes/dev-status.svg
+[dev-deps-url]: https://david-dm.org/es-shims/array-includes#info=devDependencies
 [npm-badge-png]: https://nodei.co/npm/array-includes.png?downloads=true&stars=true
 [license-image]: http://img.shields.io/npm/l/array-includes.svg
 [license-url]: LICENSE
