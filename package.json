@@ -59,7 +59,7 @@
 		"function-bind": "^1.1.1",
 		"functions-have-names": "^1.2.0",
 		"indexof": "^0.0.1",
-		"tape": "^4.11.0"
+		"tape": "^4.12.0"
 	},
 	"testling": {
 		"files": [
