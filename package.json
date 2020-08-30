@@ -22,7 +22,7 @@
 	"scripts": {
 		"pretest": "npm run --silent lint && evalmd README.md",
 		"test": "npm run --silent tests-only",
-		"posttest": "npx aud",
+		"posttest": "npx aud --production",
 		"tests-only": "es-shim-api --bound && npm run --silent test:shimmed && npm run --silent test:module",
 		"test:shimmed": "node test/shimmed.js",
 		"test:module": "node test/index.js",
@@ -52,15 +52,16 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
-		"@ljharb/eslint-config": "^16.0.0",
+		"@ljharb/eslint-config": "^17.2.0",
+		"aud": "^1.1.2",
 		"covert": "^1.1.1",
-		"eslint": "^6.8.0",
+		"eslint": "^7.7.0",
 		"evalmd": "0.0.19",
 		"foreach": "^2.0.5",
 		"function-bind": "^1.1.1",
 		"functions-have-names": "^1.2.1",
 		"indexof": "^0.0.1",
-		"tape": "^5.0.0-next.4"
+		"tape": "^5.0.1"
 	},
 	"testling": {
 		"files": [
