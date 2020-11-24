@@ -23,12 +23,11 @@
 		"pretest": "npm run --silent lint && evalmd README.md",
 		"test": "npm run --silent tests-only",
 		"posttest": "npx aud --production",
-		"tests-only": "es-shim-api --bound && npm run --silent test:shimmed && npm run --silent test:module",
-		"test:shimmed": "node test/shimmed.js",
-		"test:module": "node test/index.js",
+		"tests-only": "tape 'test/**/*.js'",
 		"coverage": "covert test/*.js",
 		"coverage:quiet": "covert test/*.js --quiet",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"postlint": "es-shim-api --bound"
 	},
 	"repository": {
 		"type": "git",
@@ -60,12 +59,14 @@
 		"foreach": "^2.0.5",
 		"function-bind": "^1.1.1",
 		"functions-have-names": "^1.2.1",
+		"has-strict-mode": "^1.0.0",
 		"indexof": "^0.0.1",
 		"tape": "^5.0.1"
 	},
 	"testling": {
 		"files": [
 			"test/index.js",
+			"test/implementation.js",
 			"test/shimmed.js"
 		],
 		"browsers": [
