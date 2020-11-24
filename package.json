@@ -23,9 +23,7 @@
 		"pretest": "npm run --silent lint && evalmd README.md",
 		"test": "npm run --silent tests-only",
 		"posttest": "npx aud --production",
-		"tests-only": "tape 'test/**/*.js'",
-		"coverage": "covert test/*.js",
-		"coverage:quiet": "covert test/*.js --quiet",
+		"tests-only": "nyc tape 'test/**/*.js'",
 		"lint": "eslint .",
 		"postlint": "es-shim-api --bound"
 	},
@@ -53,7 +51,6 @@
 		"@es-shims/api": "^2.1.2",
 		"@ljharb/eslint-config": "^17.2.0",
 		"aud": "^1.1.2",
-		"covert": "^1.1.1",
 		"eslint": "^7.7.0",
 		"evalmd": "0.0.19",
 		"foreach": "^2.0.5",
@@ -61,6 +58,7 @@
 		"functions-have-names": "^1.2.1",
 		"has-strict-mode": "^1.0.0",
 		"indexof": "^0.0.1",
+		"nyc": "^10.3.2",
 		"tape": "^5.0.1"
 	},
 	"testling": {
