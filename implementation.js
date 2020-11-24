@@ -6,8 +6,8 @@ var ToObject = require('es-abstract/2020/ToObject');
 var SameValueZero = require('es-abstract/2020/SameValueZero');
 var $isNaN = require('es-abstract/helpers/isNaN');
 var $isFinite = require('es-abstract/helpers/isFinite');
-var GetIntrinsic = require('es-abstract/GetIntrinsic');
-var callBound = require('es-abstract/helpers/callBound');
+var GetIntrinsic = require('get-intrinsic');
+var callBound = require('call-bind/callBound');
 var isString = require('is-string');
 
 var $charAt = callBound('String.prototype.charAt');
