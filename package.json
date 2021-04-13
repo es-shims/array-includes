@@ -55,8 +55,8 @@
 		"@es-shims/api": "^2.1.2",
 		"@ljharb/eslint-config": "^17.5.1",
 		"aud": "^1.1.4",
-		"eslint": "^7.20.0",
-		"evalmd": "0.0.19",
+		"eslint": "^7.24.0",
+		"evalmd": "^0.0.19",
 		"foreach": "^2.0.5",
 		"function-bind": "^1.1.1",
 		"functions-have-names": "^1.2.2",
@@ -64,7 +64,7 @@
 		"indexof": "^0.0.1",
 		"nyc": "^10.3.2",
 		"safe-publish-latest": "^1.1.4",
-		"tape": "^5.2.0"
+		"tape": "^5.2.2"
 	},
 	"testling": {
 		"files": [
