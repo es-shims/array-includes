@@ -12,6 +12,7 @@ var isString = require('is-string');
 
 var $charAt = callBound('String.prototype.charAt');
 var $indexOf = GetIntrinsic('%Array.prototype.indexOf%'); // TODO: use callBind.apply without breaking IE 8
+var $max = GetIntrinsic('%Math.max%');
 
 module.exports = function includes(searchElement) {
 	var fromIndex = arguments.length > 1 ? ToIntegerOrInfinity(arguments[1]) : 0;
@@ -24,7 +25,7 @@ module.exports = function includes(searchElement) {
 	if (length === 0) {
 		return false;
 	}
-	var k = fromIndex >= 0 ? fromIndex : Math.max(0, length + fromIndex);
+	var k = fromIndex >= 0 ? fromIndex : $max(0, length + fromIndex);
 	while (k < length) {
 		if (SameValueZero(searchElement, isString(O) ? $charAt(O, k) : O[k])) {
 			return true;
