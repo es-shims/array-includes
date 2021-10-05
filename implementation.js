@@ -1,9 +1,9 @@
 'use strict';
 
-var ToInteger = require('es-abstract/2020/ToInteger');
-var ToLength = require('es-abstract/2020/ToLength');
-var ToObject = require('es-abstract/2020/ToObject');
-var SameValueZero = require('es-abstract/2020/SameValueZero');
+var ToIntegerOrInfinity = require('es-abstract/2021/ToIntegerOrInfinity');
+var ToLength = require('es-abstract/2021/ToLength');
+var ToObject = require('es-abstract/2021/ToObject');
+var SameValueZero = require('es-abstract/2021/SameValueZero');
 var $isNaN = require('es-abstract/helpers/isNaN');
 var $isFinite = require('es-abstract/helpers/isFinite');
 var GetIntrinsic = require('get-intrinsic');
@@ -14,7 +14,7 @@ var $charAt = callBound('String.prototype.charAt');
 var $indexOf = GetIntrinsic('%Array.prototype.indexOf%'); // TODO: use callBind.apply without breaking IE 8
 
 module.exports = function includes(searchElement) {
-	var fromIndex = arguments.length > 1 ? ToInteger(arguments[1]) : 0;
+	var fromIndex = arguments.length > 1 ? ToIntegerOrInfinity(arguments[1]) : 0;
 	if ($indexOf && !$isNaN(searchElement) && $isFinite(fromIndex) && typeof searchElement !== 'undefined') {
 		return $indexOf.apply(this, arguments) > -1;
 	}
