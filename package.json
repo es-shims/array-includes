@@ -47,8 +47,8 @@
 	],
 	"dependencies": {
 		"call-bind": "^1.0.2",
-		"define-properties": "^1.1.3",
-		"es-abstract": "^1.19.1",
+		"define-properties": "^1.1.4",
+		"es-abstract": "^1.19.5",
 		"get-intrinsic": "^1.1.1",
 		"is-string": "^1.0.7"
 	},
