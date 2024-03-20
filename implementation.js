@@ -2,7 +2,7 @@
 
 var ToIntegerOrInfinity = require('es-abstract/2023/ToIntegerOrInfinity');
 var ToLength = require('es-abstract/2023/ToLength');
-var ToObject = require('es-abstract/2023/ToObject');
+var ToObject = require('es-object-atoms/ToObject');
 var SameValueZero = require('es-abstract/2023/SameValueZero');
 var $isNaN = require('es-abstract/helpers/isNaN');
 var $isFinite = require('es-abstract/helpers/isFinite');
