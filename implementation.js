@@ -1,9 +1,9 @@
 'use strict';
 
-var ToIntegerOrInfinity = require('es-abstract/2024/ToIntegerOrInfinity');
-var ToLength = require('es-abstract/2024/ToLength');
+var ToIntegerOrInfinity = require('es-abstract/2025/ToIntegerOrInfinity');
+var ToLength = require('es-abstract/2025/ToLength');
 var ToObject = require('es-object-atoms/ToObject');
-var SameValueZero = require('es-abstract/2024/SameValueZero');
+var SameValueZero = require('es-abstract/2025/SameValueZero');
 var $isNaN = require('es-abstract/helpers/isNaN');
 var $isFinite = require('es-abstract/helpers/isFinite');
 var GetIntrinsic = require('get-intrinsic');
