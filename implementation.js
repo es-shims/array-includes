@@ -4,10 +4,10 @@ var ToIntegerOrInfinity = require('es-abstract/2025/ToIntegerOrInfinity');
 var ToLength = require('es-abstract/2025/ToLength');
 var ToObject = require('es-object-atoms/ToObject');
 var SameValueZero = require('es-abstract/2025/SameValueZero');
-var $isNaN = require('es-abstract/helpers/isNaN');
-var $isFinite = require('es-abstract/helpers/isFinite');
+var $isNaN = require('math-intrinsics/isNaN');
+var $isFinite = require('math-intrinsics/isFinite');
 var GetIntrinsic = require('get-intrinsic');
-var callBound = require('call-bind/callBound');
+var callBound = require('call-bound');
 var isString = require('is-string');
 
 var $charAt = callBound('String.prototype.charAt');
