@@ -101,5 +101,5 @@ Simply clone the repo, `npm install`, and run `npm test`
 [downloads-url]: https://npm-stat.com/charts.html?package=array-includes
 [codecov-image]: https://codecov.io/gh/es-shims/array-includes/branch/main/graphs/badge.svg
 [codecov-url]: https://app.codecov.io/gh/es-shims/array-includes/
-[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/es-shims/array-includes
+[actions-image]: https://img.shields.io/github/check-runs/es-shims/array-includes/main
 [actions-url]: https://github.com/es-shims/array-includes/actions
